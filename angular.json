@@ -9,5 +9,16 @@
     "reviewslib": "libs/reviewslib",
     "ui": "libs/ui",
     "users": "libs/users"
+  },
+  "configurations": {
+    "production": {
+      "budgets": [
+        {
+          "type": "initial",
+          "maximumWarning": "4mb",
+          "maximumError": "5mb"
+        }
+      ]
+    }
   }
 }
