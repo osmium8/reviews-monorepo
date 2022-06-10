@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "projects": {
+    "admin": "apps/admin",
+    "admin-e2e": "apps/admin-e2e",
+    "products": "libs/products",
+    "reviews": "apps/reviews",
+    "reviews-e2e": "apps/reviews-e2e",
+    "reviewslib": "libs/reviewslib",
+    "ui": "libs/ui",
+    "users": "libs/users"
+  }
+}

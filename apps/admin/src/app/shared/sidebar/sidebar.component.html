@@ -1,0 +1,28 @@
+<div class="admin-sidebar">
+    <div class="logo">
+        <img src="/assets/images/rating.png" alt="" />
+    </div>
+    <div class="links">
+        <ul>
+            <li>
+                <a routerLink="/"><i class="pi pi-home"></i> Dashboard</a>
+            </li>
+            <li>
+                <a routerLink="/products"><i class="pi pi-heart"></i> Products</a>
+            </li>
+            <li>
+                <a routerLink="/categories"><i class="pi pi-book"></i> Categories</a>
+            </li>
+            <li>
+                <a routerLink="/reviews"><i class="pi pi-star"></i> Reviews</a>
+            </li>
+            <li>
+                <a routerLink="/users"><i class="pi pi-users"></i> Users</a>
+            </li>
+
+            <li class="logout">
+                <a><i class="pi pi-sign-out" (click)="logoutUser()"></i> Logout</a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+<p-toast></p-toast>
+<div class="admin-page">
+    <p-card header="Reviews" subheader="List of all reviews to be approved">
+        <div class="grid">
+            <div class="col-12">
+                <p-table [value]="reviews" styleClass="p-datatable-gridlines">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th pSortableColumn="name">
+                                User
+                                <p-sortIcon field="user"></p-sortIcon>
+                            </th>
+                            <th pSortableColumn="product">
+                                Product
+                                <p-sortIcon field="product"></p-sortIcon>
+                            </th>
+                            <th pSortableColumn="rating">
+                                Rating
+                                <p-sortIcon field="rating"></p-sortIcon>
+                            </th>
+                            <th pSortableColumn="date">
+                                Date
+                                <p-sortIcon field="date"></p-sortIcon>
+                            </th>
+                            <th pSortableColumn="isApproved">Approval
+                                <p-sortIcon field="isApproved"></p-sortIcon>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-review>
+                        <tr>
+                            <td>{{ review.user.name }}</td>
+                            <td>{{ review.product.name }}</td>
+                            <td style="min-width: 188px">
+                                <p-rating [(ngModel)]="review.rating" [readonly]="true" [cancel]="false"></p-rating>
+                            </td>
+                            <td>{{ review.date | date: 'short' }}</td>
+                            <td>
+                                <p-tag value="approved" *ngIf="review.isApproved" icon="pi pi-check" severity="success" [rounded]="true"></p-tag>
+                                <p-tag value="pending" *ngIf="!review.isApproved" icon="pi pi-times" severity="warning" [rounded]="true"></p-tag>
+                            </td>
+                            <td style="min-width: 150px">
+                                <p-button (click)="deleteReview(review.id)" styleClass="p-button-danger m-1" icon="pi pi-trash"></p-button>
+                                <p-button (click)="showReview(review.id)" styleClass="p-button-success m-1" icon="pi pi-eye"></p-button>
+                            </td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+    </p-card>
+</div>
+<p-confirmDialog [style]="{ width: '50vw' }" [baseZIndex]="10000" rejectButtonStyleClass="p-button-text">
+</p-confirmDialog>

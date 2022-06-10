@@ -1,0 +1,41 @@
+<p-toast></p-toast>
+<div class="admin-page">
+    <p-card [header]="'Add Review'" subheader="You can add a review here ">
+        <div class="grid p-mb-5 ">
+            <div class="col-12 ">
+                <p-toolbar>
+                    <div class="p-toolbar-group-left ">
+                        <p-card class="card">
+                            <div class="card-container yellow-container overflow-hidden">
+                                <div class="flex align-items-center col-10">
+                                    <i class="pi pi-user"></i>
+                                    <p *ngIf="user" class="p-1">{{user.name}}</p>
+                                    <form [formGroup]="form">
+                                        <div class="p-fluid formgrid">
+                                            <div class="p-field col">
+                                                <label for="rating">Ratings</label>
+                                                <p-rating formControlName="rating" id="rating" [cancel]="false"></p-rating>
+                                                <small *ngIf="reviewForm.rating.invalid && isSubmitted " class="p-error">Rating is required</small>
+                                            </div>
+                                            <div class="p-field col">
+                                                <label for="description">Description</label>
+                                                <textarea formControlName="description" id="description" type="text" pInputTextarea></textarea>
+                                            </div>
+                                            <small *ngIf="description.errors && isSubmitted && description.errors!['required']" class="p-error ">Description is required</small>
+                                            <small *ngIf="description.errors && isSubmitted && description.errors!['minlength']" class="p-error">Minimum length of a review should be 20 characters.</small>
+                                            <small *ngIf="description.errors && isSubmitted && description.errors!['maxlength']" class="p-error">A review must be less than 400 characters.</small>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </p-card>
+                    </div>
+                    <div class="p-toolbar-group-right ">
+                        <p-button styleClass="p-button-primary m-2 " [label]=" 'Add' " icon="pi pi-plus " (click)="onSubmit()"></p-button>
+                        <p-button styleClass="p-button-secondary m-2 " label="Cancel" icon="pi pi-arrow-circle-left " (click)="onCancel()"></p-button>
+                    </div>
+                </p-toolbar>
+            </div>
+        </div>
+    </p-card>
+</div>

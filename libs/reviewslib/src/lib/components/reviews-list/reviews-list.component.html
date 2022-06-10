@@ -1,0 +1,7 @@
+<div class="m-2" *ngFor="let review of reviews">
+    <p-card subheader="{{review.user!.name}}">
+        <p-rating class="" [(ngModel)]="review.rating" [cancel]="false" [disabled]="true"></p-rating>
+        <p style="font-weight:600">{{review.description}}</p>
+        <small>{{review.date | date: 'short'}}</small>
+    </p-card>
+</div>

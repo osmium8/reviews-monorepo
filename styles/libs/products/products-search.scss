@@ -1,0 +1,55 @@
+.products-search {
+    display: flex;
+    background-color: var(--surface-200);
+    border-radius: 10px;
+    width: 300px;
+    height: 35px;
+    margin: 10px 5px;
+    .pi {
+        width: 25px;
+        font-size: 1.3em;
+        color: $primary-color;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    &-input {
+        height: 35px;
+        background-color: transparent;
+        color: var(surface-600);
+        border: 0;
+        &:focus,
+        &:active {
+            border: 0;
+            outline: none;
+        }
+    }
+}
+
+.products-filter {
+    display: flex;
+    background-color: var(--surface-200);
+    border-radius: 10px;
+    width: 200px;
+    height: 35px;
+    margin: 20px 5px;
+    .pi {
+        width: 25px;
+        font-size: 1.3em;
+        color: $primary-color;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    &-input {
+        margin-left: 10px;
+        height: 35px;
+        background-color: transparent;
+        color: var(surface-600);
+        border: 0;
+        &:focus,
+        &:active {
+            border: 0;
+            outline: none;
+        }
+    }
+}

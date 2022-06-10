@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/reviewslib/src",
+  "prefix": "reviewslib",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/reviewslib"],
+      "options": {
+        "jestConfig": "libs/reviewslib/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/reviewslib/**/*.ts",
+          "libs/reviewslib/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

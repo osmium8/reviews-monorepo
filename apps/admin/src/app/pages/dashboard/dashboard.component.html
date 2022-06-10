@@ -1,0 +1,50 @@
+<div class="admin-page" *ngIf="statistics.length">
+    <p-card header="Dashboard" subheader="Latest Updates">
+        <div class="grid">
+            <div class="col-3">
+                <p-card styleClass="d-reviews">
+                    <div class="d-item">
+                        <div>
+                            <i class="pi pi-star"></i><br />
+                            <span class="name">Reviews</span>
+                        </div>
+                        <span class="number">{{ statistics[0] }}</span>
+                    </div>
+                </p-card>
+            </div>
+            <div class="col-3">
+                <p-card styleClass="d-products">
+                    <div class="d-item">
+                        <div>
+                            <i class="pi pi-heart"></i><br />
+                            <span class="name">Products</span>
+                        </div>
+                        <span class="number">{{ statistics[1] }}</span>
+                    </div>
+                </p-card>
+            </div>
+            <div class="col-3">
+                <p-card styleClass="d-users">
+                    <div class="d-item">
+                        <div>
+                            <i class="pi pi-users"></i><br />
+                            <span class="name">Users</span>
+                        </div>
+                        <span class="number">{{ statistics[2] }}</span>
+                    </div>
+                </p-card>
+            </div>
+            <div class="col-3">
+                <p-card styleClass="d-totalsales">
+                    <div class="d-item">
+                        <div>
+                            <i class="pi pi-book"></i><br />
+                            <span class="name">Categories</span>
+                        </div>
+                        <span class="number">{{ statistics[3] }}</span>
+                    </div>
+                </p-card>
+            </div>
+        </div>
+    </p-card>
+</div>

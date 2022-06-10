@@ -1,0 +1,23 @@
+<div class="product-page" *ngIf="product">
+    <div class="grid">
+        <div class="col-6">
+            <img class="product-image" [src]="product.image" alt="product image">
+        </div>
+        <div class="col-6 product">
+            <h2 class="product-name">{{ product.name }}</h2>
+            <p class="product-desc">{{ product.description }}</p>
+            <p>code: {{ product.code }}</p>
+            <p>date added: {{ product.dateCreated | date: 'short' }}</p>
+            <div class="product-rating">
+                <p-rating [(ngModel)]="rating" [cancel]="false" [disabled]="true"></p-rating>
+            </div>
+            <div class="product-price">
+                {{ product.price | currency:"INR" }}
+            </div>
+            <div class="product-actions">
+                <button pButton pRipple type="button" label="Add a Review" class="p-button-rounded" [routerLink]="'/review/' + product.id"></button>
+            </div>
+            <reviewslib-reviews-list productId="{{product.id}}"></reviewslib-reviews-list>
+        </div>
+    </div>
+</div>

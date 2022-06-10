@@ -1,0 +1,28 @@
+<footer>
+    <div class="grid footer-wrapper">
+        <div class="col-8">
+            &copy; 2022 Reviews App
+            <p-tag *ngIf="statistics[0]" value="{{statistics[0]}} reviews" icon="pi pi-shield" severity="info" [rounded]="true"></p-tag>
+            &nbsp;
+            <p-tag *ngIf="statistics[1]" value="{{statistics[1]}} products" icon="pi pi-shopping-bag" severity="warning" [rounded]="true"></p-tag>
+            &nbsp;
+            <p-tag *ngIf="statistics[2]" value="{{statistics[2]}} registered users" icon="pi pi-user" severity="info" [rounded]="true"></p-tag>
+            &nbsp;
+            <p-tag *ngIf="statistics[3]" value="{{statistics[3]}} categories" icon="pi pi-shopping-cart" severity="warning" [rounded]="true"></p-tag>
+
+        </div>
+        <div class="col-4 social">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="pi pi-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="pi pi-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="pi pi-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,19 @@
+<header>
+    <div class="grid">
+        <div class="col-3">
+            <div class="logo">
+                <img src="assets/images/rating.png" alt="logo" />
+            </div>
+        </div>
+        <div class="col-4 search">
+            <products-search></products-search>
+        </div>
+        <div class="col-3 p-offset-1 navigation">
+            <reviews-nav></reviews-nav>
+        </div>
+        <div [ngStyle]="{ cursor: pointer }" class="col-1 tools">
+            <i class="pi pi-user"></i>
+            <a (click)="logoutUser()"><i class="pi pi-sign-out"></i></a>
+        </div>
+    </div>
+</header>

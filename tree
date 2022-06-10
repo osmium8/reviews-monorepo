@@ -1,0 +1,25 @@
+
++---apps
+|   +---admin
+|   +---reviews
+|                   
++---backend
+|   +---helpers      
+|   +---models  
+|   +---public
+|   |   \---uploads
+|   \---routes
+|           
++---environments
+|       environment.prod.ts
+|       environment.ts
+|       
++---libs
+|   |
+|   +---products                  
+|   +---reviewslib                 
+|   +---ui                    
+|   \---users
+|                       
++---styles    
+            

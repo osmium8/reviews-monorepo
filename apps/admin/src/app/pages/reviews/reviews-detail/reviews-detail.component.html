@@ -1,0 +1,69 @@
+<p-toast></p-toast>
+<div class="admin-page" *ngIf="review">
+    <p-card [header]="'View Review'" subheader="You can approve review here">
+        <div class="grid p-mb-5">
+            <div class="col-12">
+                <p-toolbar>
+                    <div class="p-toolbar-group-left"></div>
+                    <div class="p-toolbar-group-right">
+                        <p-button styleClass="p-button-secondary m-2" label="Back to list" icon="pi pi-arrow-circle-left" (click)="onCancel()"></p-button>
+                    </div>
+                </p-toolbar>
+            </div>
+        </div>
+        <p-fieldset legend="Review Details" styleClass="p-mb-4" [toggleable]="true">
+            <div class="grid">
+                <div class="col-4">
+                    <h5>Review Id</h5>
+                    <p>{{ review.id }}</p>
+                </div>
+
+                <div class="col-4">
+                    <h5>Date</h5>
+                    <p>{{ review.date | date: 'short' }}</p>
+                </div>
+
+                <div class="col-4">
+                    <h5>Approval Status</h5>
+                    <p-inputSwitch (onChange)="onStatusChange($event)" [(ngModel)]="selectedApprovalStatus">
+                    </p-inputSwitch>
+                </div>
+
+                <div class="col-4">
+                    <h5>Rating</h5>
+                    <p-rating [(ngModel)]="review.rating" [readonly]="true" [cancel]="false"></p-rating>
+                    <p>{{ review.rating | currency }}</p>
+                </div>
+                <div class="col-4">
+                    <h5>Description</h5>
+                    <p-card>
+                        {{ review.description }}
+                    </p-card>
+                    <p></p>
+                </div>
+            </div>
+        </p-fieldset>
+        <p-fieldset legend="Cutomer Details" styleClass="mb-4" [toggleable]="true">
+            <div class="p-grid">
+                <div class="col-4">
+                    <h5>Customer Information</h5>
+                    <p>{{ review.user.name }}</p>
+                    <p>{{ review.user.email }}</p>
+                </div>
+            </div>
+        </p-fieldset>
+        <p-fieldset legend="Product Details" styleClass="mb-4" [toggleable]="true">
+            <div class="grid">
+                <div class="col-4">
+                    <h5>Product Details</h5>
+                    <p>name: {{ review.product.name }}</p>
+                    <p>code: {{ review.product.code }}</p>
+                    <p>brand: {{ review.product.brand }}</p>
+                </div>
+                <div class="col-8">
+                    <img width="50%" src="{{review.product.image}}" alt="product-image">
+                </div>
+            </div>
+        </p-fieldset>
+    </p-card>
+</div>

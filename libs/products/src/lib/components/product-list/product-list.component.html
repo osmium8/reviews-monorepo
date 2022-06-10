@@ -1,0 +1,42 @@
+<div class="products-page">
+    <div class="grid">
+        <div class="col-3" *ngIf="!isCategoryPage">
+            <div>
+                <h4>Categories</h4>
+                <div class="p-field-checkbox mt-2" *ngFor="let category of categories">
+                    <p-checkbox [(ngModel)]="category.checked" [binary]="true" [inputId]="category.id || ''" (onChange)="categoryFilter()"></p-checkbox>
+                    <label class="m-2" for="{{ category.id }}">{{ category.name }}</label>
+                </div>
+            </div>
+            <div class="products-filter">
+                <i class="pi pi-filter"></i>
+                <input type="text" placeholder="Code" class="products-filter-input" name="search" id="search" pInputText [(ngModel)]="codeQuery" (change)="codeFilter()" />
+            </div>
+            <div class="products-filter">
+                <i class="pi pi-filter"></i>
+                <input type="text" placeholder="Brand" class="products-filter-input" name="search" id="search" pInputText [(ngModel)]="brandQuery" (change)="brandFilter()" />
+            </div>
+            <div class="products-filter">
+                <i class="pi pi-filter"></i>
+                <input type="text" placeholder="Name" class="products-filter-input" name="search" id="search" pInputText [(ngModel)]="nameQuery" (change)="nameFilter()" />
+            </div>
+        </div>
+        <div [ngClass]="{ 'col-9': !isCategoryPage, 'col-12': isCategoryPage }">
+            <div *ngIf="!products.length" class="grid">
+                <div class="col">
+                    <h2>No matching product</h2>
+                    <h4>
+                        You can post a new product :) &nbsp;
+                        <button pButton pRipple type="button" icon="pi pi-plus" class="p-button-rounded p-button-warning" (click)="goToNewProduct()"></button>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="grid" *ngIf="products">
+                <div [ngClass]="{ 'col-4': !isCategoryPage, 'col-3': isCategoryPage }" *ngFor="let product of products">
+                    <products-product-item [product]="product"></products-product-item>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
