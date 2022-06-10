@@ -29,7 +29,6 @@ const routes: Routes = [
   ],
   declarations: [LoginComponent, RegisterComponent],
   exports: [
-    RegisterComponent
   ]
 })
 export class UsersModule {}
