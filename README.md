@@ -1,8 +1,8 @@
 ### Live at: https://osmium8.github.io/reviews-monorepo/
-###### Admin panel not deployed yet.
-###### [Backend Repo](https://github.com/osmium8/reviews-backend)
+###### (Admin panel is not deployed, screenshots are attached)
+###### Backend is deployed on heroku so it may take upto 3 seconds to load products.
 
-###### Backend:
+###### Backend: [Go to Backend Repository](https://github.com/osmium8/reviews-backend)
 <img width="703" alt="one" src="https://user-images.githubusercontent.com/18210415/178135519-1d742cf7-6298-40d6-8fcc-f5dc7ddbb237.png">
 
 ###### Frontend:
