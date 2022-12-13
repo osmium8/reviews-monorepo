@@ -1,105 +1,60 @@
+# Product Reviews
+### Live at: https://osmium8.github.io/reviews-monorepo/
+###### (Admin panel is not deployed, screenshots are attached)
+###### Backend is deployed on heroku so it may take upto 3 seconds to load products.
+
+###### Backend: [Go to Backend Repository](https://github.com/osmium8/reviews-backend)
+<img width="703" alt="one" src="https://user-images.githubusercontent.com/18210415/178135519-1d742cf7-6298-40d6-8fcc-f5dc7ddbb237.png">
+
+###### Frontend:
+<img width="799" alt="two" src="https://user-images.githubusercontent.com/18210415/178135518-b5fb6953-b30f-48d7-8a53-9939b4c6a66b.png">
+
+###### NX Dependency graph:
+<img width="344" alt="dep" src="https://user-images.githubusercontent.com/18210415/178135523-5904e955-2585-4396-83e3-21ebbcc57a09.png">
+
+###### Database design:
+<img width="556" alt="db" src="https://user-images.githubusercontent.com/18210415/178135520-7d7854c0-1c4f-4265-bc5d-45cc372a088c.png">
+
+###### AUTH & ADMIN RIGHT:
+<img width="916" alt="auth" src="https://user-images.githubusercontent.com/18210415/178135522-7c4449c5-d455-4483-90be-f735205dbea6.png">
+
+### Screenshots:
+| description | screenshot |
+| ----------- | ---------- |
+| Login       |![screely-1657433988629](https://user-images.githubusercontent.com/18210415/178133811-78657a24-3e01-4de6-a691-7546dbf9205e.png)|
+| Home        |![screely-1657433871705](https://user-images.githubusercontent.com/18210415/178133742-7de948cd-79e8-47ee-8afe-ab94b0feabb4.png)|
+| Product     |![screely-1657434043009](https://user-images.githubusercontent.com/18210415/178133807-edde7e11-646a-4825-a4b1-0b41fdd05bb5.png)|
+| All Products |![screely-1657434797273](https://user-images.githubusercontent.com/18210415/178134084-2433983d-92ec-4974-9438-4987b183c9b0.png)|
+
+### Screenshots (Admin panel):
+| description | screenshot |
+| ----------- | ---------- |
+| Review |![screely-1657435621630](https://user-images.githubusercontent.com/18210415/178134578-d9bba650-9ffa-497d-a46b-351826001dd9.png)|
+| Users |![screely-1657435948300](https://user-images.githubusercontent.com/18210415/178134494-f8cc27a2-aa20-40b0-ad45-6ba7c2b4bbac.png)|
+| Categories |![screely-1657435847824](https://user-images.githubusercontent.com/18210415/178134506-f06b7927-264c-48b5-91df-0a211327f695.png)|
+| Products |![screely-1657435710266](https://user-images.githubusercontent.com/18210415/178134515-78d915df-a993-4a40-bcdc-6fb038fa5d30.png)|
 
 
-# Pranshu
-
-This project was generated using [Nx](https://nx.dev).
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
-
-🔎 **Smart, Fast and Extensible Build System**
-
-## Quick Start & Documentation
-
-[Nx Documentation](https://nx.dev/angular)
-
-[10-minute video showing all Nx features](https://nx.dev/getting-started/intro)
-
-[Interactive Tutorial](https://nx.dev/tutorial/01-create-application)
-
-## Adding capabilities to your workspace
-
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
-
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
-
-Below are our core plugins:
-
-- [Angular](https://angular.io)
-  - `ng add @nrwl/angular`
-- [React](https://reactjs.org)
-  - `ng add @nrwl/react`
-- Web (no framework frontends)
-  - `ng add @nrwl/web`
-- [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
-- [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
-
-There are also many [community plugins](https://nx.dev/community) you could add.
-
-## Generate an application
-
-Run `ng g @nrwl/angular:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `ng g @nrwl/angular:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are shareable across libraries and applications. They can be imported from `@pranshu/mylib`.
-
-## Development server
-
-Run `ng serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng g component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `ng build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
-
-
-
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+### Structure
+```
+nx-workspace
+|
++---apps
+|   +---admin
+|   +---reviews
+|                   
++---backend
+|   +---helpers      
+|   +---models  
+|   +---public\uploads
+|   \---routes
+|       
++---libs
+|   |
+|   +---products                  
+|   +---reviewslib                 
+|   +---ui                    
+|   \---users
+|                       
++---styles    
+```
