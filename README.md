@@ -1,5 +1,6 @@
 # Product Reviews
 ### Live at: https://osmium8.github.io/reviews-monorepo/
+Note: nodejs backend is depoloyed using Render, so it may take several seconds for the products to load.
 ###### (Admin panel is not deployed, screenshots are attached)
 
 ### Screenshots:
