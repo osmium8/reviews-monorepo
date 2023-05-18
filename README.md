@@ -1,10 +1,6 @@
 # Product Reviews
 ### Live at: https://osmium8.github.io/reviews-monorepo/
 ###### (Admin panel is not deployed, screenshots are attached)
-###### Backend is deployed at render.
-
-###### Backend: [Go to Backend Repository](https://github.com/osmium8/reviews-backend)
-<img width="703" alt="one" src="https://user-images.githubusercontent.com/18210415/178135519-1d742cf7-6298-40d6-8fcc-f5dc7ddbb237.png">
 
 ### Screenshots:
 | description | screenshot |
@@ -21,6 +17,9 @@
 | Users |![screely-1657435948300](https://user-images.githubusercontent.com/18210415/178134494-f8cc27a2-aa20-40b0-ad45-6ba7c2b4bbac.png)|
 | Categories |![screely-1657435847824](https://user-images.githubusercontent.com/18210415/178134506-f06b7927-264c-48b5-91df-0a211327f695.png)|
 | Products |![screely-1657435710266](https://user-images.githubusercontent.com/18210415/178134515-78d915df-a993-4a40-bcdc-6fb038fa5d30.png)|
+
+###### Backend: [Go to Backend Repository](https://github.com/osmium8/reviews-backend)
+<img width="703" alt="one" src="https://user-images.githubusercontent.com/18210415/178135519-1d742cf7-6298-40d6-8fcc-f5dc7ddbb237.png">
 
 ###### Frontend:
 <img width="799" alt="two" src="https://user-images.githubusercontent.com/18210415/178135518-b5fb6953-b30f-48d7-8a53-9939b4c6a66b.png">
