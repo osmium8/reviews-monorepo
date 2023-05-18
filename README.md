@@ -6,18 +6,6 @@
 ###### Backend: [Go to Backend Repository](https://github.com/osmium8/reviews-backend)
 <img width="703" alt="one" src="https://user-images.githubusercontent.com/18210415/178135519-1d742cf7-6298-40d6-8fcc-f5dc7ddbb237.png">
 
-###### Frontend:
-<img width="799" alt="two" src="https://user-images.githubusercontent.com/18210415/178135518-b5fb6953-b30f-48d7-8a53-9939b4c6a66b.png">
-
-###### NX Dependency graph:
-<img width="344" alt="dep" src="https://user-images.githubusercontent.com/18210415/178135523-5904e955-2585-4396-83e3-21ebbcc57a09.png">
-
-###### Database design:
-<img width="556" alt="db" src="https://user-images.githubusercontent.com/18210415/178135520-7d7854c0-1c4f-4265-bc5d-45cc372a088c.png">
-
-###### AUTH & ADMIN RIGHT:
-<img width="916" alt="auth" src="https://user-images.githubusercontent.com/18210415/178135522-7c4449c5-d455-4483-90be-f735205dbea6.png">
-
 ### Screenshots:
 | description | screenshot |
 | ----------- | ---------- |
@@ -34,6 +22,17 @@
 | Categories |![screely-1657435847824](https://user-images.githubusercontent.com/18210415/178134506-f06b7927-264c-48b5-91df-0a211327f695.png)|
 | Products |![screely-1657435710266](https://user-images.githubusercontent.com/18210415/178134515-78d915df-a993-4a40-bcdc-6fb038fa5d30.png)|
 
+###### Frontend:
+<img width="799" alt="two" src="https://user-images.githubusercontent.com/18210415/178135518-b5fb6953-b30f-48d7-8a53-9939b4c6a66b.png">
+
+###### NX Dependency graph:
+<img width="344" alt="dep" src="https://user-images.githubusercontent.com/18210415/178135523-5904e955-2585-4396-83e3-21ebbcc57a09.png">
+
+###### Database design:
+<img width="556" alt="db" src="https://user-images.githubusercontent.com/18210415/178135520-7d7854c0-1c4f-4265-bc5d-45cc372a088c.png">
+
+###### AUTH & ADMIN RIGHT:
+<img width="916" alt="auth" src="https://user-images.githubusercontent.com/18210415/178135522-7c4449c5-d455-4483-90be-f735205dbea6.png">
 
 ### Structure
 ```
